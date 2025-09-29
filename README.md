@@ -4,18 +4,33 @@ This repository contains a comprehensive analysis of CO2 emissions patterns and 
 
 ## Project Overview
 
-This project consists of three main analytical components:
+1. Data Processing & Preparation  
+   - Notebook: 01_get_data.ipynb  
+   - Report: 01_get_data.md  
+   - Description: Extracts and processes World Bank indicators and vehicle adoption data, cleaning and preparing it for analysis.
 
-1. **Data Processing & Preparation** (`01_get_data.ipynb`)
-2. **CO2 Emissions Prediction Model** (`02_prediction_model.ipynb`) 
-3. **EV Adoption Impact Analysis** (`03_ev_adoption.ipynb`)
+2. CO2 Emissions Prediction Model  
+   - Notebook: 02_prediction_model.ipynb  
+   - Report: 02_prediction_model.md  
+   - Description: Builds and evaluates a predictive model for CO2 emissions based on economic and energy variables.
+
+3. EV Adoption Impact Analysis  
+   - Notebook: 03_ev_adoption.ipynb  
+   - Report: 03_ev_adoption.md  
+   - Description: Analyzes how the growth of electric vehicle adoption influences CO2 emissions trends.
+
+4. Classifier Analysis  
+   - Notebook: 04_classifier.ipynb  
+   - Report: 04_classifier_analysis.md  
+   - Description: Implements and evaluates classification models to categorize countries based on their emissions and adoption patterns.
+
+
 
 ## Project Structure
 
 ```
 Decision_Sciences_Practical_Exam/
 ├── data/                           # Data files
-│   ├── WB_WDI_WIDEF.csv           # World Bank WDI raw data
 │   ├── important_variables.csv    # Processed WDI data (1995-2024)
 │   ├── dictionary_indicators.csv  # Variable definitions
 │   ├── cars_country.csv           # EV stock data by country
@@ -23,43 +38,11 @@ Decision_Sciences_Practical_Exam/
 ├── scripts/                       # Analysis notebooks
 │   ├── 01_get_data.ipynb         # Data processing and cleaning
 │   ├── 02_prediction_model.ipynb # CO2 emissions prediction model
-│   └── 03_ev_adoption.ipynb       # EV adoption impact analysis
+│   ├── 03_ev_adoption.ipynb # CO2 emissions prediction model
+│   └── 04_clasiffier.ipynb       # EV adoption impact analysis
 └── README.md                      # This file
 ```
 
-## Analysis Components
-
-### 1. Data Processing (`01_get_data.ipynb`)
-- **Source**: World Bank Development Indicators (WDI) dataset
-- **Scope**: 159 countries, 1995-2024 timeframe
-- **Key Variables**: 67 economic, demographic, energy, and emissions indicators
-- **Data Quality**: 
-  - Removed countries with >17% missing data
-  - Applied linear interpolation for missing values
-  - Filtered out geographic regions (kept only countries)
-
-### 2. CO2 Emissions Prediction Model (`02_prediction_model.ipynb`)
-- **Target Variable**: CO2 emissions per capita (`WB_WDI_EN_GHG_CO2_PC_CE_AR5`)
-- **Methodology**: 
-  - Lasso regression for feature selection
-  - Temporal split: train on 1995-2020, test on 2021-2024
-  - Country dummy variables for fixed effects
-- **Key Predictors**:
-  - GDP growth rate
-  - Coal electricity production
-  - Energy use per capita
-  - Fossil fuel consumption
-- **Model Performance**: R² = 0.948, RMSE = 1.359
-
-### 3. EV Adoption Impact Analysis (`03_ev_adoption.ipynb`)
-- **Data Sources**: 
-  - IEA Global EV Data Explorer
-  - World Population Review vehicle statistics
-- **Analysis Year**: 2022 (most recent comprehensive data)
-- **Key Findings**: 
-  - EV adoption rate impact on CO2 emissions
-  - Simulation of 50% EV adoption scenario
-  - Model performance: R² = 0.881, RMSE = 1.097
 
 ## Technical Requirements
 
