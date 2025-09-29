@@ -4,26 +4,39 @@ This repository contains a comprehensive analysis of CO2 emissions patterns and 
 
 ## Project Overview
 
-1. Data Processing & Preparation  
-   - Notebook: 01_get_data.ipynb  
-   - Report: 01_get_data.md  
-   - Description: Extracts and processes World Bank indicators and vehicle adoption data, cleaning and preparing it for analysis.
+This project analyzes CO2 emissions patterns and their relationship with economic indicators, energy production sources, and electric vehicle adoption across countries. The analysis includes predictive modeling, classification, and strategic scenario planning for renewable energy investments.
 
-2. CO2 Emissions Prediction Model  
-   - Notebook: 02_prediction_model.ipynb  
-   - Report: 02_prediction_model.md  
-   - Description: Builds and evaluates a predictive model for CO2 emissions based on economic and energy variables.
+## Data Processing & Preparation
 
-3. EV Adoption Impact Analysis  
-   - Notebook: 03_ev_adoption.ipynb  
-   - Report: 03_ev_adoption.md  
-   - Description: Analyzes how the growth of electric vehicle adoption influences CO2 emissions trends.
+**Notebook:** `01_get_data.ipynb`  
+**Report:** `01_get_data.md`  
+**Description:** Extracts and processes World Bank indicators and vehicle adoption data, cleaning and preparing it for analysis.
 
-4. Classifier Analysis  
-   - Notebook: 04_classifier.ipynb  
-   - Report: 04_classifier_analysis.md  
-   - Description: Implements and evaluates classification models to categorize countries based on their emissions and adoption patterns.
+## CO2 Emissions Prediction Model
 
+**Notebook:** `02_prediction_model.ipynb`  
+**Report:** `02_prediction_model.md`  
+**Description:** Builds and evaluates a predictive model for CO2 emissions based on economic and energy variables.
+
+## EV Adoption Impact Analysis
+
+**Notebook:** `03_ev_adoption.ipynb`  
+**Report:** `03_ev_adoption.md`  
+**Description:** Analyzes how the growth of electric vehicle adoption influences CO2 emissions trends.
+
+## Classifier Analysis
+
+**Notebook:** `04_classifier.ipynb`  
+**Report:** `04_classifier_analysis.md`  
+**Description:** Implements and evaluates classification models to categorize countries based on their emissions and adoption patterns.
+
+## Strategic Renewable Energy Analysis
+
+**Notebook:** `05_strategic_analysis.ipynb`  
+**Description:** Analyzes the impact of different renewable energy investment strategies on CO2 emissions. Simulates three scenarios:
+- **Scenario 1:** Solar/wind dominant (80% solar/wind, 20% hydroelectric)
+- **Scenario 2:** Balanced approach (50% solar/wind, 50% hydroelectric)  
+- **Scenario 3:** Hydroelectric dominant (30% solar/wind, 70% hydroelectric)
 
 
 ## Project Structure
@@ -40,7 +53,8 @@ Decision_Sciences_Practical_Exam/
 │   ├── 02_prediction_model.ipynb # CO2 emissions prediction model
 │   ├── 03_ev_adoption.ipynb # CO2 emissions prediction model
 │   └── 04_clasiffier.ipynb       # EV adoption impact analysis
-└── README.md                      # This file
+│   └── 05_strategic_analysis.ipynb # Strategic renewable energy analysis
+└── README.md # This file
 ```
 
 
