@@ -27,7 +27,7 @@ Decision_Sciences_Practical_Exam/
 └── README.md                      # This file
 ```
 
-## 🔬 Analysis Components
+## Analysis Components
 
 ### 1. Data Processing (`01_get_data.ipynb`)
 - **Source**: World Bank Development Indicators (WDI) dataset
